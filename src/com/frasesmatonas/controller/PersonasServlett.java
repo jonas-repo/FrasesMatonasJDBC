@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.frasesmatonas.db.DatabaseManager;
 import com.frasesmatonas.fmmvc.DatabaseUtil;
+import com.frasesmatonas.model.Frase;
 import com.frasesmatonas.model.Persona;
 
 
@@ -43,6 +44,10 @@ public class PersonasServlett extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//objects creation
+		Frase frase = new Frase();
+		String fecha = "2019-11-21";
+		frase.setFecha(java.sql.Date.valueOf(fecha));
+		
 		Connection conn = null;
 		DatabaseManager dbManager = null;
 		Persona persona = null;
