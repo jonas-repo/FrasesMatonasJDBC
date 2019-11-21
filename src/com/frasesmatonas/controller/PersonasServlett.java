@@ -66,6 +66,7 @@ public class PersonasServlett extends HttpServlet {
 		
 		dbManager.crearPersona(persona);
 		DatabaseUtil.closeConnection(conn);
+		doGet(request, response);
 	}
 
 }
