@@ -7,6 +7,8 @@
 <title>Personas formulario</title>
 </head>
 <body>
-	 
+	 <a href="formPersona.jsp">Ir a formulario de persona</a>
+	 <br>
+	 <a href="personas">Mostrar personas</a>
 </body>
 </html>
